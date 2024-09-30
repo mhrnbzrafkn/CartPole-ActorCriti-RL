@@ -14,13 +14,13 @@ Key features:
 ## Installation
 
 1. Clone this repository:
-   ```
+   ```bash
    git clone https://github.com/yourusername/CartPole-ActorCritic-RL.git
    cd CartPole-ActorCritic-RL
    ```
 
 2. Install the required dependencies:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
@@ -28,11 +28,11 @@ Key features:
 
 To train and evaluate the model, run:
 
-```
+```bash
 python main.py
 ```
 
-The script will train the agent until it solves the environment (average reward of 500 over 100 consecutive episodes) and then switch to evaluation mode with rendered visualization.
+The script will train the agent until it solves the environment (average reward of 1000 over 20 consecutive episodes) and then switch to evaluation mode with rendered visualization.
 
 ## Project Structure
 
@@ -50,22 +50,21 @@ Key hyperparameters used in this implementation:
 - Hidden layer size: 128
 - Replay buffer size: 16384
 - Batch size: 128
-- Update frequency: Every 1 steps
+- Update frequency: Every step
+- Solved threshold: 1000
+- Solved episode window: 20
 
 ## Results
 
-The agent typically solves the environment within a few hundred episodes. After solving, it consistently achieves the maximum episode length of 500 steps.
+The agent typically solves the environment within a few hundred episodes. After solving, it consistently achieves the maximum episode length of 500 steps (the default for CartPole-v1).
 
 ## Future Improvements
 
 - Implement a target network for more stable learning
 - Add support for continuous action spaces
 - Experiment with different network architectures
+- Implement more advanced algorithms like PPO or SAC
 
 ## Contributing
 
 Contributions to this project are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
