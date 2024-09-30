@@ -47,10 +47,10 @@ Key hyperparameters used in this implementation:
 
 - Learning rate: 0.0001
 - Discount factor (gamma): 0.99
-- Hidden layer size: 256
-- Replay buffer size: 10000
-- Batch size: 64
-- Update frequency: Every 4 steps
+- Hidden layer size: 128
+- Replay buffer size: 16384
+- Batch size: 128
+- Update frequency: Every 1 steps
 
 ## Results
 
